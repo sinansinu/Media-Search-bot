@@ -27,14 +27,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**plzz join my channel for using this bot!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("JOIN MY CHANNEL🌀", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" 🔄 REFRESH", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -99,8 +99,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton(text="SEARCH HERE🔎", switch_inline_query_current_chat=""),
+                        InlineKeyboardButton(text="GO INLINE🔎", switch_inline_query="")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/updateschnl'),
-            InlineKeyboardButton('Source Code', url='https://t.me/updateschnl')
+            InlineKeyboardButton(text="SEARCH HERE🔎", switch_inline_query_current_chat=""),
+            InlineKeyboardButton(text="GO INLINE🔎", switch_inline_query="")
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="എന്താടാ മോനുസേ ജാഡയാണോ", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
