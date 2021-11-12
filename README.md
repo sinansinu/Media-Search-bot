@@ -45,8 +45,11 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 
 ### Optional Variables
 * `OMDB_API_KEY`: OMBD_API_KEY to generate imdb poster for filter results.Get it from [omdbapi.com](http://www.omdbapi.com/apikey.aspx)
-* `CUSTOM_FILE_CAPTION` : A custom caption for your files. You can format it with file_name, file_size, file_caption.(supports html formating)
-Example: `<b>Join [XTZ Bots](https://t.me/subin_works) for more useful bots</b>\n\n<code>{file_name}</code>\nSize{file_size}\n{file_caption}.`
+* `CUSTOM_FILE_CAPTION` : A custom caption for your files. You can format it with file_name, file_size, file_caption.(supports html formating). Don't use '\n' for now.
+Example: `<b>Join [XTZ Bots](https://t.me/subin_works) for more useful bots</b>
+<code>{file_name}</code>
+Size{file_size}
+{file_caption}.`
 * `AUTH_GROUPS` : ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.
 * `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
 * `CACHE_TIME`: The maximum amount of time in seconds that the result of the inline query may be cached on the server
@@ -54,6 +57,7 @@ Example: `<b>Join [XTZ Bots](https://t.me/subin_works) for more useful bots</b>\
 * `AUTH_USERS`: Username or ID of users to give access of inline search. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.
 * `AUTH_CHANNEL`: ID of channel. Without subscribing this channel users cannot use bot.
 * `START_MSG`: Welcome message for start command.
+* `BUTTON` : Set this to True only if you want close button.
 
 ## Note
 * Currently [API used](http://www.omdbapi.com) here is allowing 1000 requests per day. [You may not get posters if its crossed](https://t.me/ThankTelegram/910168). 
