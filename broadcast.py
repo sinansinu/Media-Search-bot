@@ -16,5 +16,5 @@ from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from database import Database
 
 
-DATABASE_URL = os.environ["DATABASE_URL"]
-db = Database(DATABASE_URL, "FnTelegraphBot")
+DATABASE_URI = os.environ["DATABASE_URI"]
+db = Database(DATABASE_URI, "FnTelegraphBot")
